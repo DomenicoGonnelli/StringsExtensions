@@ -16,13 +16,14 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Domenico Gonnelli" => "Domenico.gonnelli@nttdata.com" }
   
-  # spec.platform     = :ios
+  spec.platform     = :ios
+  spec.ios.deployment_target = '9.0'
   spec.swift_version  = "4.2"
 
   spec.source       = { :git => "https://github.com/DomenicoGonnelli/StringsExtensions.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "StringsExtensions/StringsExtensions/**/*.{h,m,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "StringsExtensions", "StringsExtensions/**/*.{h,m,swift}"
+  #spec.exclude_files = "Classes/Exclude"
 
 end
