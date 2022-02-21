@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios
   spec.swift_version  = "4.2"
 
-  spec.source       = { :git => "git@github.com:DomenicoGonnelli/StringsExtensions.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/DomenicoGonnelli/StringsExtensions.git", :tag => "#{spec.version}" }
 
 
   spec.source_files  = "StringsExtensions/StringsExtensions/**/*.{h,m,swift}"
